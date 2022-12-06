@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/748/748137.png">
+    <style>
+        body{
+            background-color: #3e4144;
+        }
+        .cuadro1{
+            background-color: #65727c;
+            width: 400px;
+            height: 600px;
+            top: 20%;
+            left: 35%;
+            position: absolute;
+            border-radius: 2%;
+            box-shadow: 10px 10px 10px #515151;
+        }
+        .cuadro1:hover{
+            filter: opacity(95%);
+        }
+        h1{
+            margin-top: 20%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #171718;
+            padding-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .username{
+            top:32%;
+            left: 10%;
+            position: absolute;
+            width: 310px;
+            border-bottom: solid #171718;
+            font-size: 15px;
+            padding: 8px 3px;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .password{
+            top: 42%;
+            left: 10%;
+            position: absolute;
+            width: 310px;
+            border-bottom: solid #171718;
+            font-size: 15px;
+            padding: 8px 3px;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: black;
+        }
+        ::placeholder{
+            color: #171718;
+            font-weight: bold;
+        }
+        .login{
+            position: absolute;
+            color: white;
+            top: 90%;
+            left: 10%;
+            width: 90px;
+            height: 35px;
+            font-size: 15px;
+            background: #3e4144 ;
+            border-radius: 15%;
+            border: none;
+        }
+        .login:hover{
+            width: 320px;
+            transition-duration: 400ms;
+        }
+        a{
+            color: #171718;
+            font-weight: bold;
+        }
+        .mail{
+            top: 52%;
+            left: 10%;
+            position: absolute;
+            width: 310px;
+            border-bottom: solid #171718;
+            font-size: 15px;
+            padding: 8px 3px;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: black;
+        }
+        .tel{
+            top: 62%;
+            left: 10%;
+            position: absolute;
+            width: 310px;
+            border-bottom: solid #171718;
+            font-size: 15px;
+            padding: 8px 3px;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: black;
+        }
+        .gender{
+            top: 72%;
+            left: 10%;
+            position: absolute;
+            width: 310px;
+            border-bottom: solid #171718;
+            font-size: 15px;
+            padding: 8px 3px;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: black;
+            font-weight: bold;
+        }
+        .logo1{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 4%;
+            left: 45%;
+        }
+        .back{
+            position: absolute;
+            width: 30px;
+            height: auto;
+            left: 5%;
+            top: 4%;
+        }
+        .back:hover{
+            width: 40px;
+            height: auto;
+            transition-duration: 200ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro1">
+        <a href="login.html"><img class="back" src="https://cdn-icons-png.flaticon.com/512/2722/2722991.png"></a>
+        <img class="logo1" src="https://cdn-icons-png.flaticon.com/512/748/748137.png">
+        <br>
+       <center><h1>Sign Up</h1></center>
+       <form action="signup2.html">
+        <center><input class="username" type="text" placeholder="Username" minlength="5" maxlength="10" title="Create a username" required></center>
+        <center><input class="password" type="password" placeholder="Password" minlength="5" maxlength="10" title="Create a password" required></center>
+        <center><input class="mail" type="email" placeholder="Email" title="Type your email" required></center>
+        <center><input class="tel" type="tel" placeholder="Phone Number" minlength="5" maxlength="20" title="Type your phone number" required></center>
+        <center><select class="gender" name="gender" title="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="No-gender">I prefer not to say</option>
+        </select></center>
+        <button class="login">Continue</button>
+       </form>
+    </div> 
+</body>
+</html>
